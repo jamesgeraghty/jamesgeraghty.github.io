@@ -1,0 +1,45 @@
+{
+    "attire-version": "1.1",
+    "execution-data": {
+        "execution-command": "Invoke-AtomicTest",
+        "execution-id": "3im2GxwX9VG8jzXLTDegLEKY8WfrA1IXL0VUwhlDYWs=",
+        "execution-source": "Invoke-Atomicredteam",
+        "execution-category": {
+            "name": "Atomic Red Team",
+            "abbreviation": "ART"
+        },
+        "target": {
+            "host": "WINDEV2009EVAL",
+            "ip_address": "127.0.2.1"
+        },
+        "time-generated": "2022-02-16T10:16:52.719Z"
+    },
+    "procedures": [
+        {
+            "procedure-name": "Regsvr32 remote COM scriptlet execution",
+            "procedure-description": "Run an exe on user logon or system startup.",
+            "procedure-id": {
+                "type": "guid",
+                "uuid": "c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36"
+            },
+            "mitre-technique-id": "T1218.000",
+            "orders": "1",
+            "steps": [
+                {
+                    "command": "powershell",
+                    "executor": "Powershell",
+                    "order": 1,
+                    "output": [
+                        {
+                            "content": "123",
+                            "level": "123",
+                            "type": "Console"
+                        }
+                    ],
+                    "time-start": "2022-01-25 15:33:18.122Z",
+                    "time-stop": "2021-10-27 02:02:25.122Z"
+                }
+            ]
+        }
+    ]
+}
