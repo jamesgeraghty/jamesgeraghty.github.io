@@ -1,35 +1,13 @@
-Landed by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+James Geraghty 
+Student Number: 20022946
+Project Title: Py-Attire-Logger
 
+Deliverables
 
-A dark, slick, modern, responsive, adjective-drenched design built around an extremely
-dynamic landing page (scroll that mofo!). Inspired by Big Picture, another design
-of mine with a similarish feel/flow, only this time I took it waaaaaay further and
-actually made it multipurpose (versus copping out and making it a one pager like I
-did last time ;) Includes multiple pages, a bunch of pre-styled elements, and all
-its Sass sources.
+•	Client Library delivered as a Python Package. 
+•	Regular Expressions and Field Validators to ensure correct execution and procedure information will be added.
+•	Unit and integration tests to ensure classes, methods, and functions work are intended. 
+•	Sample script that demonstrates the usage of the ATTiRe library.
+•	Using Pythons built in Filehandler package to generate log file of Mitre ATT&CK data.
+•	Automatic Python binding generation from JSON Schemas.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = Not included)
-
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
