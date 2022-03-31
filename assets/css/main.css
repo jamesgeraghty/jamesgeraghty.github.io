@@ -60,6 +60,11 @@ mark {
 	color: inherit;
 }
 
+container
+{
+	width: 100%;
+}
+
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
@@ -2532,6 +2537,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 4px;
 			display: block;
+			
 		}
 
 		.image.left {
