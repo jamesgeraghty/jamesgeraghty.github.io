@@ -15,28 +15,13 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<h1 id="logo"><a href="index.html">About</a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Layouts</a>
-								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
-								</ul>
+							<li>								
 							</li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="/py_logger.html">Py Attire logger</a></li>
 							
 						</ul>
 					</nav>
@@ -46,7 +31,7 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>Elements</h2>
+							<h2>Py Attire logger</h2>
 							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
 						</header>
 
@@ -57,70 +42,57 @@
 
 								<hr />
 
-								<header>
-									<h3>Heading with a Subtitle</h3>
-									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-								<header>
-									<h4>Heading with a Subtitle</h4>
-									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-
-			
-
-								<h4>Blockquote</h4>
-								<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+								
 
 								<h4>Py Attire Logger JSON File </h4>
-								<pre><code>
-                                    {"attire-version": "1.1",
-                                    "execution-data": {
-                                        "execution-command": "atomic-operator run --techniques T1033",
-                                        "execution-id": "5ryLU1Ppiy6e9R1xdwzALg",
-                                        "execution-source": "Atomic Operator",
-                                        "execution-category": {
-                                            "name": "Atomic Red Team",
-                                            "abbreviation": "ART"
-                                        },
-                                        "target": {
-                                            "host": "mint-devbox",
-                                            "ip": "127.0.2.1"
-                                        },
-                                        "time-generated": "2022-03-29T13:54:29.424Z"
-                                    },
-                                    "procedures": [
-                                        {
-                                        "procedure-name": "System Owner/User Discovery",
-                                        "procedure-description": "Identify System owner or users on an endpoint\n\nUpon 
-                                            successful execution, sh will stdout list of usernames.\n",
-                                            "procedure-id": {
-                                                "type": "guid",
-                                                "id": "2a9b677d-a230-44f4-ad86-782df1ef108c"
+								<pre style="font-size: 20px"><code>
+                                    {
+                                        "attire-version": "1.1",
+                                        "execution-data": {
+                                            "execution-command": "Invoke-AtomicTest T1218.010 -TestNames \"Regsvr32 remote COM scriptlet execution\",\"Regsvr32 local DLL execution\"",
+                                            "execution-id": "3im2GxwX9VG8jzXLTDegLEKY8WfrA1IXL0VUwhlDYWs=",
+                                            "execution-source": "Invoke-Atomicredteam",
+                                            "execution-category": {
+                                                "name": "Atomic Red Team",
+                                                "abbreviation": "ART"
                                             },
-                                            "mitre-technique-id": "T1033",
-                                            "order": 1,
-                                            "steps": [
-                                                {
-                                                    "command": "users\nw\nwho\n",
-                                                    "executor": "sh",
-                                                    "order": 1,
-                                                    "output": [
-                                                        {
-                                                            "content": "2022-03-29T13:54:29.446Z",
-                                                            "level": "STDOUT",
-                                                            "type": "Console"
-                                                        }
-                                                    ],
-                                                    "time-start": "2022-03-29T13:54:29.429Z",
-                                                    "time-stop": "2022-03-29T13:54:29.446Z"
-                                                }
-                                            ]
+                                            "target": {
+                                                "host": "WINDEV2009EVAL",
+                                                "ip": "192.168.204.129",
+                                                "path": "PATH=C:\\Windows\\system32;C:\\Windows",
+                                                "user": "User"
+                                            },
+                                            "time-generated": "2021-10-27T02:00:57.439Z"
                                         },
-                                        
-                                    ]
-                                }
+                                        "procedures": [
+                                            {
+                                                "procedure-name": "Regsvr32 remote COM scriptlet execution",
+                                                "procedure-description": "Run an exe on user logon or system startup.  Upon execution, success messages will be displayed for the two scheduled tasks. To view\nthe tasks, open the Task Scheduler and look in the Active Tasks pane.",
+                                                "procedure-id": {
+                                                    "type": "guid",
+                                                    "id": "c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36"
+                                                },
+                                                "mitre-technique-id": "T1218.010",
+                                                "order": 1,
+                                                "steps": [
+                                                    {
+                                                        "command": "powershell.exe -File \"T1218010 - Regsvr32 remote COM scriptlet execution\"",
+                                                        "executor": "POWERSHELL",
+                                                        "order": 1,
+                                                        "output": [
+                                                            {
+                                                                "content": "File C:\\Users\\User\\Desktop\\AEv1.0 - Administrator-10\\T1218010 - Regsvr32 remote COM scriptlet executio.ps1 cannot be \r\nloaded. The file C:\\Users\\User\\Desktop\\AEv1.0 - Administrator-10\\T1218010 - Regsvr32 remote COM scriptlet executio is not digitally signed. You cannot run this script on the current system. For more information \r\nabout running scripts and setting execution policy, see about_Execution_Policies at \r\nhttps:/go.microsoft.com/fwlink/?LinkID=135170.\r\n    + CategoryInfo          : SecurityError: (:) [], ParentContainsErrorRecordException\r\n    + FullyQualifiedErrorId : UnauthorizedAccess",
+                                                                "level": "STDERR",
+                                                                "type": "console"
+                                                            }
+                                                        ],
+                                                        "time-start": "2021-10-27T02:02:23.000Z",
+                                                        "time-stop": "2021-10-27T02:02:25.000Z"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
                                 
 	                </code></pre>
 							</section>
@@ -129,15 +101,39 @@
 
 						<!-- Table -->
 							<section>
-								<h3>Table</h3>
-								<h4>Default</h4>
+								<h3>Description of Contents</h3>
+                                <header>
+									<h3>Versioning</h3>
+									<p>This refers to ATTiRe v1.1. Subsequent foundational changes will lead to an increase in the ATTiRe version number.</p>
+								</header>	
+                                <header>
+									<h3>Execution Data</h3>
+									<p>Execution data in ATTiRe represents an execution event. For a portable executable or disposable script emulating a single procedure or a series of TTP's, this includes information related to the command run to trigger the execution and the active environment.</p>
+                                    <p><b>execution-command:</b> the command run to trigger the execution event.<br>
+
+                                        <b>execution-id:</b> a unique identifier for the execution event, usually a random string meant to help dedupe attack logs.<br>
+                                        <b>execution-source:</b> metadata describing the source of the execution. Typically used by the log consumer to name a campaign. examples: Invoke-atomicredteam, Cobalt Strike, Powershell Empire.<br>
+                                        <b>execution-category:</b> (optional) metadata describing the category of all tests being run. This may be used by the log consumer to modify or provide additional detail to procedure names for long-term reference purposes like creating templates.<br>
+                                        <b>name:</b> name for an execution category.<br>
+                                        <b>abbreviation:</b> abbreviation for an execution category. May be used by log consumer to prefix generated procedure templates. Example: an abbreviation of "PRE" might create a procedure template of "PRE - Procedure1" for a procedure named "Procedure1".<br>
+                                        <b>target:</b> target metadata for the execution event. A target may be something like information about a host where procedures are run or a web URL for a target application.<br>
+                                        <b>host:</b> hostname where execution event was targeted.<br>
+                                        <b>ip:</b> IP address where execution event was targeted.<pr>
+                                        <b>path:</b> (optional) path information on the execution target.<br>
+                                        <b>user:</b> (optional) username of running user on execution target.<br>
+                                        <b>time-generated:</b> the time this logfile was generated.</p>
+                                </header>	
+                                <header>
+									<h3>Heading with a Subtitle</h3>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
 								<div class="table-wrapper">
 									<table>
 										<thead>
 											<tr>
-												<th>Name</th>
-												<th>Description</th>
-												<th>Price</th>
+												<th>Key</th>
+												<th>value</th>
+												
 											</tr>
 										</thead>
 										<tbody>
@@ -175,53 +171,7 @@
 										</tfoot>
 									</table>
 								</div>
-								<h4>Alternate</h4>
-								<div class="table-wrapper">
-									<table class="alt">
-										<thead>
-											<tr>
-												<th>Name</th>
-												<th>Description</th>
-												<th>Price</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Item 1</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 2</td>
-												<td>Vis ac commodo adipiscing arcu aliquet.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 3</td>
-												<td> Morbi faucibus arcu accumsan lorem.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 4</td>
-												<td>Vitae integer tempus condimentum.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 5</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="2"></td>
-												<td>100.00</td>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-							</section>
-
+							
 						
 
 

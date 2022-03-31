@@ -3393,6 +3393,7 @@ input, select, textarea {
 			margin: 0;
 			position: absolute;
 			top: 0;
+			font-size: 32px;
 		}
 
 		#header nav {
