@@ -106,19 +106,19 @@
                                 <header>
 									<h3>Execution Data</h3>
 									<p>Execution data in ATTiRe represents an execution event. For a portable executable or disposable script emulating a single procedure or a series of TTP's, this includes information related to the command run to trigger the execution and the active environment.</p>
-                                    <p><b>execution-command:</b> the command run to trigger the execution event.<br>
+                                    <p><b>execution-command:</b> <br>The command run to trigger the execution event.<br>
 
-                                        <b>execution-id:</b> a unique identifier for the execution event, usually a random string meant to help dedupe attack logs.<br>
-                                        <b>execution-source:</b> metadata describing the source of the execution. Typically used by the log consumer to name a campaign. examples: Invoke-atomicredteam, Cobalt Strike, Powershell Empire.<br>
-                                        <b>execution-category:</b> (optional) metadata describing the category of all tests being run. This may be used by the log consumer to modify or provide additional detail to procedure names for long-term reference purposes like creating templates.<br>
-                                        <b>name:</b> name for an execution category.<br>
-                                        <b>abbreviation:</b> abbreviation for an execution category. May be used by log consumer to prefix generated procedure templates. Example: an abbreviation of "PRE" might create a procedure template of "PRE - Procedure1" for a procedure named "Procedure1".<br>
-                                        <b>target:</b> target metadata for the execution event. A target may be something like information about a host where procedures are run or a web URL for a target application.<br>
-                                        <b>host:</b> hostname where execution event was targeted.<br>
-                                        <b>ip:</b> IP address where execution event was targeted.<pr>
-                                        <b>path:</b> (optional) path information on the execution target.<br>
-                                        <b>user:</b> (optional) username of running user on execution target.<br>
-                                        <b>time-generated:</b> the time this logfile was generated.</p>
+										<br> <b>execution-id:</b> <br>A unique identifier for the execution event, usually a random string meant to help dedupe attack logs.<br>
+										<br> <b>execution-source:</b> <br>metadata describing the source of the execution. Typically used by the log consumer to name a campaign. examples: Invoke-atomicredteam, Cobalt Strike, Powershell Empire.<br>
+										<br>  <b>execution-category:</b> <br> (optional) Metadata describing the category of all tests being run. This may be used by the log consumer to modify or provide additional detail to procedure names for long-term reference purposes like creating templates.<br>
+										<br>  <b>name:</b> <br>Name for an execution category.<br>
+										<br>   <b>abbreviation:</b> <br>Abbreviation for an execution category. May be used by log consumer to prefix generated procedure templates. Example: an abbreviation of "PRE" might create a procedure template of "PRE - Procedure1" for a procedure named "Procedure1".<br>
+										<br> <b>target:</b><br> Target metadata for the execution event. A target may be something like information about a host where procedures are run or a web URL for a target application.<br>
+                                        <br><b>host:</b> <br>Hostname where execution event was targeted.<br>
+										<br> <b>ip:</b><br> IP address where execution event was targeted.<pr>
+											<br> <b>path:</b> <br>(optional) path information on the execution target.<br>
+											<br> <b>user:</b> <br>(optional) username of running user on execution target.<br>
+											<br> <b>time-generated:</b> the time this logfile was generated.</p>
                                 </header>	
                                 <header>
 									<h3>Heading with a Subtitle</h3>
