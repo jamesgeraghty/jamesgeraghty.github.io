@@ -119,54 +119,36 @@
 											<br> <b>path:</b> <br>(optional) path information on the execution target.<br>
 											<br> <b>user:</b> <br>(optional) username of running user on execution target.<br>
 											<br> <b>time-generated:</b> the time this logfile was generated.</p>
-                                </header>	
-                                <header>
-									<h3>Heading with a Subtitle</h3>
-									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-								</header>
+                               
+								
+											<p>Procedures</p>
+											<p>Procedures represent a specific and reproducible instance of an attack that may be categorised by one or more MITRE ATT&CK Technique IDs. Many procedures may be categorized by a single MITRE Technique ID, and a procedure may be categorized by multiple MITRE Technique IDs. For testing clarity, it helps if a primary MITRE Technique ID is representing the action being performed.</p>
+											<p>	procedure-name: a preferably unique name for the procedure being executed. Naming is more important than it seems. Noting proper specificity in the type of execution being performed makes it easier to prepare defences for the exact type of attack and gather intelligence on other similar attacks you may want to test.</p>
+											<p>Bad name example: "WMI Exec"</p>
+											<p>Good name example: "WMI Exec using WMIC.exe with os get /format flags"</p>
+											<p>Coverage and testing against the badly named procedure could lead to a false sense of security for other types of WMI execution attacks.</p>
+											<P>procedure-description: a longer-form description of the procedure being executed.
+											•	procedure-id: unique identifier for a specific procedure. This helps to identify the procedure being run over time for historical tracking of results.
+											o	type: the type of procedure ID, currently log consumers only support GUID.
+											o	id: the procedure ID contents.
+											•	mitre-technique-id: the primary mitre technique id for this procedure.
+											•	order: (optional) the order this procedure was run in the list of procedures.
+											•	steps: a list of steps executed within the described procedure.
+											•	command: the command for the current step. Example: maybe a command-line execution like cmd.exe /c ipconfig.
+											•	executor: a string representing the executor for the current step. If intended to be reproducible, should match expected enumerated values by consuming the tool.
+											•	order: An integer value to inform the renumbering of this command step.
+											•	time-start: ISO-8601 timestamp in UTC representing the start time of the command. Example: "2021-10-27T02:02:23.000Z".
+											•	time-stop: ISO-8601 timestamp in UTC representing the stop time of the command. Example: "2021-10-27T02:02:25.000Z".
+											•	output: Output entries from the current command.
+											•	content: String content output from the current command, may include encoded data like base64 depending on the consuming application.
+											•	level: The level of logging content - typically STDERR / STDOUT for console, could be INFO, ERROR, WARN for applications.
+											•	type: The type of command step output. Example: "console".
+											
+								
+										</header>	
+                               
 								<div class="table-wrapper">
-									<table>
-										<thead>
-											<tr>
-												<th>Key</th>
-												<th>value</th>
-												
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Item 1</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 2</td>
-												<td>Vis ac commodo adipiscing arcu aliquet.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 3</td>
-												<td> Morbi faucibus arcu accumsan lorem.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 4</td>
-												<td>Vitae integer tempus condimentum.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 5</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="2"></td>
-												<td>100.00</td>
-											</tr>
-										</tfoot>
-									</table>
+								
 								</div>
 							
 						
