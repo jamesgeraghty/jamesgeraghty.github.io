@@ -121,28 +121,28 @@
 											<br> <b>time-generated:</b> the time this logfile was generated.</p>
                                
 								
-											<p>Procedures</p>
+											<h3>Procedures</h3>
 											<p>Procedures represent a specific and reproducible instance of an attack that may be categorised by one or more MITRE ATT&CK Technique IDs. Many procedures may be categorized by a single MITRE Technique ID, and a procedure may be categorized by multiple MITRE Technique IDs. For testing clarity, it helps if a primary MITRE Technique ID is representing the action being performed.</p>
-											<p>	procedure-name: a preferably unique name for the procedure being executed. Naming is more important than it seems. Noting proper specificity in the type of execution being performed makes it easier to prepare defences for the exact type of attack and gather intelligence on other similar attacks you may want to test.</p>
-											<p>Bad name example: "WMI Exec"</p>
-											<p>Good name example: "WMI Exec using WMIC.exe with os get /format flags"</p>
-											<p>Coverage and testing against the badly named procedure could lead to a false sense of security for other types of WMI execution attacks.</p>
-											<P>procedure-description: a longer-form description of the procedure being executed.
-											•	procedure-id: unique identifier for a specific procedure. This helps to identify the procedure being run over time for historical tracking of results.
-											o	type: the type of procedure ID, currently log consumers only support GUID.
-											o	id: the procedure ID contents.
-											•	mitre-technique-id: the primary mitre technique id for this procedure.
-											•	order: (optional) the order this procedure was run in the list of procedures.
-											•	steps: a list of steps executed within the described procedure.
-											•	command: the command for the current step. Example: maybe a command-line execution like cmd.exe /c ipconfig.
-											•	executor: a string representing the executor for the current step. If intended to be reproducible, should match expected enumerated values by consuming the tool.
-											•	order: An integer value to inform the renumbering of this command step.
-											•	time-start: ISO-8601 timestamp in UTC representing the start time of the command. Example: "2021-10-27T02:02:23.000Z".
-											•	time-stop: ISO-8601 timestamp in UTC representing the stop time of the command. Example: "2021-10-27T02:02:25.000Z".
-											•	output: Output entries from the current command.
-											•	content: String content output from the current command, may include encoded data like base64 depending on the consuming application.
-											•	level: The level of logging content - typically STDERR / STDOUT for console, could be INFO, ERROR, WARN for applications.
-											•	type: The type of command step output. Example: "console".
+											<p><b>procedure-name:</b> <br> a preferably unique name for the procedure being executed. Naming is more important than it seems. Noting proper specificity in the type of execution being performed makes it easier to prepare defences for the exact type of attack and gather intelligence on other similar attacks you may want to test.<br>
+											<p><b>Bad name example:</b>  <br>"WMI Exec"</p>
+											<p><b>Good name example:</b>  <br>"WMI Exec using WMIC.exe with os get /format flags"</p>
+											<p><b>Coverage and testing against the badly named procedure could lead to a false sense of security for other types of WMI execution attacks.</p>
+											<P><b>procedure-description:</b>  <br> a longer-form description of the procedure being executed.
+											<p> <b>procedure-id:</b> unique identifier for a specific procedure. This helps to identify the procedure being run over time for historical tracking of results.<br>
+											<p> <b>type</b>: the type of procedure ID, currently log consumers only support GUID.<br>
+												<p> <b>id:</b>  <br>the procedure ID contents.<br>
+													<p> <b>mitre-technique-id:</b>  <br>the primary mitre technique id for this procedure.<br>
+														<p> <b>order:</b> <br> (optional) the order this procedure was run in the list of procedures.<br>
+															<p> <b>steps:</b> <br> a list of steps executed within the described procedure.<br>
+																<p> <b>command:</b> <br> the command for the current step. Example: maybe a command-line execution like cmd.exe /c ipconfig.<br>
+																	<p> <b>executor:</b> <br> a string representing the executor for the current step. If intended to be reproducible, should match expected enumerated values by consuming the tool.<br>
+																		<p> <b>order:</b>  <br>An integer value to inform the renumbering of this command step.
+																			<p> <b>time-start:</b> <br> ISO-8601 timestamp in UTC representing the start time of the command. Example: "2021-10-27T02:02:23.000Z".<br>
+											<p> <b>time-stop:</b> <br> ISO-8601 timestamp in UTC representing the stop time of the command. Example: "2021-10-27T02:02:25.000Z".<br>
+											<p> <b>output:</b>  <br>Output entries from the current command.<br>
+											<p> <b>content:</b>  <br>String content output from the current command, may include encoded data like base64 depending on the consuming application.</br>
+											<p> <b>level:</b>  <br>The level of logging content - typically STDERR / STDOUT for console, could be INFO, ERROR, WARN for applications.<br>
+											<p> <b>type:</b> <br>The type of command step output. Example: "console".<br>
 											
 								
 										</header>	
